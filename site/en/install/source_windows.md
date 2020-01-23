@@ -49,19 +49,19 @@ run:
 pacman -S git patch unzip
 </pre>
 
-### Install Visual C++ Build Tools 2017
+### Install Visual C++ Build Tools 2019
 
-Install the *Visual C++ build tools 2017*. This comes with *Visual Studio 2017*
+Install the *Visual C++ build tools 2019*. This comes with *Visual Studio 2019*
 but can be installed separately:
 
 1.  Go to the
-    [Visual Studio downloads](https://visualstudio.microsoft.com/vs/older-downloads/){:.external},
-2.  Select *Redistributables and Build Tools*,
-3.  Download and install:
-    -   *Microsoft Visual C++ 2017 Redistributable*
-    -   *Microsoft Build Tools 2017*
+    [Visual Studio downloads](https://visualstudio.microsoft.com/downloads/){:.external},
+2.  Select *Tools for Visual Studio 2019*.
+3.  Download and install *Build Tools for Visual Studio 2019*.
+4.  Select *Other Tools and Frameworks*.
+5.  Download and install *Microsoft Visual C++ Redistributable for Visual Studio 2019* for your platform.
 
-Note: TensorFlow is tested against the *Visual Studio 2017*.
+Note: TensorFlow is tested against the *Visual Studio 2019*.
 
 ### Install GPU support (optional)
 
@@ -282,6 +282,7 @@ For GPU support, add the CUDA and cuDNN bin directories to your `$PATH`:
 
 <table>
 <tr><th>Version</th><th>Python version</th><th>Compiler</th><th>Build tools</th></tr>
+<tr><td>tensorflow-2.1.0</td><td>3.5-3.7</td><td>MSVC 2019</td><td>Bazel 1.2.1</td></tr>
 <tr><td>tensorflow-2.0.0</td><td>3.5-3.7</td><td>MSVC 2017</td><td>Bazel 0.26.1</td></tr>
 <tr><td>tensorflow-1.14.0</td><td>3.5-3.7</td><td>MSVC 2017</td><td>Bazel 0.24.1-0.25.2</td></tr>
 <tr><td>tensorflow-1.13.0</td><td>3.5-3.7</td><td>MSVC 2015 update 3</td><td>Bazel 0.19.0-0.21.0</td></tr>
@@ -304,6 +305,7 @@ For GPU support, add the CUDA and cuDNN bin directories to your `$PATH`:
 
 <table>
 <tr><th>Version</th><th>Python version</th><th>Compiler</th><th>Build tools</th><th>cuDNN</th><th>CUDA</th></tr>
+<tr><td>tensorflow_gpu-2.1.0</td><td>3.5-3.7</td><td>MSVC 2019</td><td>Bazel 1.2.1</td><td>7.6.4</td><td>10.1</td></tr>
 <tr><td>tensorflow_gpu-2.0.0</td><td>3.5-3.7</td><td>MSVC 2017</td><td>Bazel 0.26.1</td><td>7.4</td><td>10</td></tr>
 <tr><td>tensorflow_gpu-1.14.0</td><td>3.5-3.7</td><td>MSVC 2017</td><td>Bazel 0.24.1-0.25.2</td><td>7.4</td><td>10</td></tr>
 <tr><td>tensorflow_gpu-1.13.0</td><td>3.5-3.7</td><td>MSVC 2015 update 3</td><td>Bazel 0.19.0-0.21.0</td><td>7.4</td><td>10</td></tr>
